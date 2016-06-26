@@ -1,0 +1,30 @@
+extends ./common/layout
+block content
+  - var title = '元宝申购记录';
+  div(class="subscribe container")
+    include ./common/header
+    div(class="content")
+      div(class="notice")
+        span(class="left")
+          strong 累计申购：
+          em 15000
+        span(class="right")
+          a(href="javascript:void(0)" class="btn btn-confirm")  按时间查询
+      table(class="table")
+        thead
+          tr
+            th 申购时间
+            th 金额
+            th 申购比例
+            th 申购数量
+        tbody
+          tr
+            td 06-24
+            td ¥500
+            td 1:10
+            td(class="positive") +5000
+          tr
+            td 06-24
+            td ¥500
+            td 1:10
+            td(class="positive") +5000

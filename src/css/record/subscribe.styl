@@ -1,0 +1,58 @@
+@import "../common/util"
+
+subscribe()
+	.header
+		h1
+			font-size $rem(30px)
+			color #fff
+		.back
+			color #fff
+			font-size $rem(40px)
+	.notice
+		display flex
+		height $rem(72px)
+		align-items center
+		span
+			flex 1
+			display flex
+		.left
+			margin-left $rem(45px)
+			strong
+				color #000
+			em 
+				color #f33718
+		.right
+			justify-content flex-end
+			margin-right $rem(45px)
+	.table thead tr,.table tbody tr
+		display flex
+	.table
+		width 100%
+		tr
+			border-bottom 1px solid #b4b4b4
+			font-size $rem(22px)
+			color #000
+		thead th
+			background-color #f5f4f9
+		tbody td,thead th
+			flex 1
+			height $rem(70px)
+			display flex
+			justify-content center
+			align-items center
+		tbody td:nth-child(1)
+			color #9d9d9d
+			font-weight normal
+		tbody td:nth-child(2)
+			color #f33718
+		tbody td.positive
+			color #f9c00e
+	.btn
+		padding $rem(5px 20px)
+		color #fff
+		font-weight bold
+		
+	.btn-success
+		background-color #7cc373
+	.btn-confirm
+		background-color #f33718

@@ -1,0 +1,31 @@
+extends ./common/layout
+block content
+  - var title = '优惠券列表';
+  div(class="coupon container")
+    include ./common/header
+    div(class="content")
+      table(class="table")
+        thead
+          tr
+            th 昵称
+            th 头像
+            th ID
+            th 代金券
+            th 验证状态
+        tbody
+          tr
+            td 其名为鲲
+            td 
+              img(width="44" height="44" src="./")
+            td 10195 
+            td ¥50
+            td 
+              a(href="javascript:void(0)" class="btn btn-success") 验证成功
+          tr
+            td 其名为鲲
+            td 
+              img(width="44" height="44" src="./")
+            td 10195 
+            td ¥50
+            td 
+              a(href="javascript:void(0)" class="btn btn-confirm") 验证成功

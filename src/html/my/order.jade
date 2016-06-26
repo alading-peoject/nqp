@@ -1,0 +1,60 @@
+extends ./common/layout
+block content
+  - var title = '推荐商家';
+  div(class="list container")
+    include ./common/header
+    div(class="content")
+      div(class="navigator")
+        a(class="sub" href="#") 智能排序
+        a(class="sub" href="#") 我附件
+        a(class="sub" href="#")
+          select 省份
+            option 浙江省
+            option 北京市
+        a(class="sub" href="#") 
+          select 城市
+            option 杭州
+            option 金华
+      div(class="detail")
+        ul(class="menu")
+          li(class="sub selected")
+            a(href="#") 餐饮
+          li(class="sub")
+            a(href="#") 景点
+          li(class="sub")
+            a(href="#") 酒店
+          li(class="sub")
+            a(href="#") 休闲
+          li(class="sub")
+            a(href="#") 娱乐
+          li(class="sub")
+            a(href="#") KTV
+        div(class="main")
+          div(class="no-list")
+            | 暂无商户信息
+          div(class="item")
+            div(class="pic") 
+              img(src="../../images/1_03.jpg")
+            div(class="note")
+              p(class="name") 美美蛋糕店
+              p(class="level level1")
+              p(class="service") 送礼、预定等服务
+              p(class="extral")
+                span
+                  em ¥200
+                  | 起 
+                strong <100m
+          div(class="item")
+            div(class="pic") 
+              img(src="../../images/1_03.jpg")
+            div(class="note")
+              p(class="name") 美美蛋糕店
+              p(class="level level1")
+              p(class="service") 送礼、预定等服务
+              p(class="extral")
+                span
+                  em ¥200
+                  | 起 
+                strong <100m
+    include ./common/footer
+    script(src="../../js/list.js")

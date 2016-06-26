@@ -1,0 +1,31 @@
+extends ./common/layout
+block content
+  - var title = '元宝赠送记录';
+  div(class="present container")
+    include ./common/header
+    div(class="present content")
+      div(class="notice")
+        span(class="left")
+          strong 查询类别
+        span(class="right")
+          a(href="javascript:void(0)" class="btn btn-confirm")  按时间查询
+          a(href="javascript:void(0)" class="btn btn-confirm")  按昵称查询
+          a(href="javascript:void(0)" class="btn btn-confirm")  按ID查询
+      table(class="table")
+        thead
+          tr
+            th 赠送时间
+            th 昵称
+            th ID
+            th 元宝数
+        tbody
+          tr
+            td 06-24
+            td 其名为鲲
+            td 10167
+            td(class="positive") 120
+          tr
+            td 06-24
+            td 其名为鲲
+            td 10167
+            td(class="positive") 120

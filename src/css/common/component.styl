@@ -1,0 +1,44 @@
+@import "./util"
+
+general(headerHeight=136px,footerHeight=138px,headerBackgroundColor=#ffc000,headerColor=#772b00,footerBackgroundColor=#efefef,footerColor =#a9a9a9)
+	html,body
+		height 100%
+		overflow hidden
+		font-size $rem(14px)
+	.container
+		$setFlex(,,column)
+		width 100%
+		height 100%
+	/*头部*/
+	.header
+		$setFlex()
+		width 100% 
+		height $rem(headerHeight)
+		position relative
+		left 0
+		top 0 
+		h1
+			flex 1
+			height 100%
+			$setFlex()
+			background-color headerBackgroundColor
+			color headerColor
+		.back
+			width $rem(80px)
+			height $rem(headerHeight)
+			line-height @height
+			text-align center
+			position absolute
+			left 0
+			top 0
+	.content
+		width 100%
+		flex 2
+		overflow-y auto
+		overflow-x hidden
+	.footer
+		$setFlex()
+		width 100%
+		height $rem(footerHeight)
+		background-color footerBackgroundColor
+		color footerColor
