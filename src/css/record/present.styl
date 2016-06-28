@@ -4,9 +4,7 @@ present()
 	.header
 		h1
 			font-size $rem(30px)
-			color #fff
 		.back
-			color #fff
 			font-size $rem(40px)
 	.notice
 		display flex
@@ -32,7 +30,7 @@ present()
 	.table
 		width 100%
 		tr
-			border-bottom 1px solid #b4b4b4
+			border-bottom $rem(1px) solid #b4b4b4
 			font-size $rem(22px)
 			color #000
 		thead th
@@ -50,6 +48,8 @@ present()
 			color #f33718
 		tbody td.positive
 			color #f9c00e
+		tbody td.negative
+			color #f33718
 	.btn
 		padding $rem(5px 20px)
 		color #fff

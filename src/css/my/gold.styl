@@ -1,27 +1,11 @@
 @import "../common/util"
 
-subscribe()
+gold()
 	.header
 		h1
 			font-size $rem(30px)
 		.back
 			font-size $rem(40px)
-	.notice
-		display flex
-		height $rem(72px)
-		align-items center
-		span
-			flex 1
-			display flex
-		.left
-			margin-left $rem(45px)
-			strong
-				color #000
-			em 
-				color #f33718
-		.right
-			justify-content flex-end
-			margin-right $rem(45px)
 	.table thead tr,.table tbody tr
 		display flex
 	.table
@@ -38,11 +22,8 @@ subscribe()
 			display flex
 			justify-content center
 			align-items center
-		tbody td:nth-child(1)
+		tbody td:nth-child(1),tbody td:nth-child(3)
 			color #9d9d9d
-			font-weight normal
-		tbody td:nth-child(2)
-			color #f33718
 		tbody td.positive
 			color #f9c00e
 		tbody td.negative

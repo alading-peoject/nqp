@@ -28,6 +28,7 @@ general(headerHeight=136px,footerHeight=138px,headerBackgroundColor=#ffc000,head
 			height $rem(headerHeight)
 			line-height @height
 			text-align center
+			color headerColor
 			position absolute
 			left 0
 			top 0
@@ -42,3 +43,28 @@ general(headerHeight=136px,footerHeight=138px,headerBackgroundColor=#ffc000,head
 		height $rem(footerHeight)
 		background-color footerBackgroundColor
 		color footerColor
+$setSelect()
+	select {
+	    font-weight: bold;
+	    color: #000;
+	    width: 64%;
+	    -webkit-appearance: none;
+	    border none
+	}
+	label {
+		position: relative;
+	}
+	
+	label:after {
+		position:absolute;
+		top: $rem(-4px);
+		right: $rem(0px);
+		display: inline-block;
+		content: "▼";
+		color: #000;
+		font-size: $rem(12px);
+		text-align: center
+		width: $rem(24px)
+		height: $rem(24px)
+		pointer-events: none;
+	}

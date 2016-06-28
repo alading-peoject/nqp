@@ -1,0 +1,106 @@
+voucher()
+	.content
+		background-color #efefef
+	.item
+		background-color #fff
+		margin $rem(30px)
+		position relative
+		&:before
+			width $rem(20px)
+			height $rem(20px)
+			border-radius $rem(10px)
+			background-color #efefef
+			position absolute
+			right $rem(150px)
+			top $rem(-10px)
+		.title
+			$setSize(,$rem(106px))
+			$setFlex()
+			border-bottom 0.1rem solid #cbcbcb
+			$setColor(#efefef,#a9a9a9)
+		.cont
+			padding $rem(54px 38px)
+	.title 
+		display flex
+		padding 0.6rem 0
+		.No
+			flex 1
+			$setColor(#efefef,#a9a9a9)
+			margin-left 1.0rem
+			$setText($rem(33px))
+		.status
+			flex 1
+			$setColor(#efefef,#a9a9a9)
+			margin-right 1.0rem
+			text-align right
+			$setText($rem(33px))
+	.cont
+		.cont-on,.cont-down
+			$setFlex()
+	.cont-on
+		.name
+			width 33.4%
+		.item-detail
+			flex 2
+			text-align left
+			margin-left $rem(20px)
+	.name
+		text-align center
+		img
+			max-width 100%
+		h2
+			height 60%
+			vertical-align middle
+		strong
+			height 40%
+			display block
+			vertical-align middle
+	.item-detail
+		display flex
+		.left
+			flex 2
+		.right
+			width $rem(100px)
+		.item-detail-sub
+			margin-bottom $rem(5px)
+		.detail-title
+			padding $rem(10px 0 10px 0)
+			$setColor(,#000)
+			$setText($rem(33px))
+		.detail-cont
+			font-size 1.4rem
+			color #ED7E31
+			border none
+			$setText($rem(33px))
+			$setColor(,#a9a9a9)
+		.text-intro
+			color #888888
+			font-size $rem(22px)
+		.price
+			font-size 1.2rem
+			$setColor(,#000000)
+			$setText($rem(33px))
+			em
+				font-size $rem(50px)
+				color #f33718
+			strong
+				font-size $rem(22px)
+				display block
+			.uncompete
+				color #f33718
+			.compete
+				color #40b237
+	.cont-down
+		margin-top $rem(40px)
+		$setFlex(space-between)
+		.message
+			flex 2
+			color #000000
+			$setText($rem(33px))
+		.button
+			text-align center
+			line-height $rem(72px)
+			border-radius $rem(5px)
+			$setSize(29.3%,$rem(72px))
+			$setColor(#ffc000,#772b00)
+			$setText($rem(33px))

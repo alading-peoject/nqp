@@ -1,10 +1,10 @@
 extends ./common/layout
 block title  
-  link(type="text/css" rel="stylesheet" href="../../../lib/swiper/css/swiper.min.css")
+  link(type="text/css" rel="stylesheet" href="../../lib/swiper/css/swiper.min.css")
   title 美美蛋糕店
 block content
   - var title = '美美蛋糕店';
-  div(class="detail container")
+  div(class="intro container")
     include ./common/header
     div(class="content")
       div(class="slide")
@@ -17,32 +17,30 @@ block content
           .swiper-pagination
       div(class="general")
         div(class="menu")
-          img(src="../../images/2_05.jpg")
-        div(class="main")
-          h2(class="title") #{title}
-          div(class="cont")
-            div(class="item")
-              img(src="../../images/2_08.jpg")
-              strong 新华路，格林联盟酒店2楼
-            div(class="item")
-              img(src="../../images/2_11.jpg") 
-              strong 0571-5811111
+          em 
+          p 湖州市安吉县递铺镇阳光工业区拥军路人民武装部
+          strong >
+        div(class="menu")
+          em 
+          p 0572-5318189
+          strong >
       div(class="coupon")
-        span 
-          em(class="del") 减
-          | 优惠信息:满100只要80元+20元宝
-        span 
-          em(class="first") 首
-          | 优惠信息:满100只要80元+20元宝
-        span  
-          em(class="free") 免
-          | 优惠信息:满100只要80元+20元宝
+        div(class="item")
+          p 蔷薇养生馆50代金券
+          a(class="btn") 立即抢购
+        div(class="item")
+          p 蔷薇养生馆50代金券
+          a(class="btn") 立即抢购
+      div(class="extral")
+        span(class="start")
+        span(class="") 112人评价 >
       div(class="notice") 
-        h3 购买须知：
+        h3 商家介绍
         div(class="cont")
-          div(class="codation") 这里是商家优惠信息的内容和使用条件
-          div(class="codation") 这里是商家优惠信息的内容和使用条件
-          div(class="codation") 这里是商家优惠信息的内容和使用条件
+          div(class="codation") 蔷薇养生馆主营：美容，美发，汗蒸，经络疏通，各项目排毒等。
+          div(class="picture") 
+            img(src="../../images/2_02.jpg")
+
     include ./common/footer
   script(src="../../lib/swiper/js/swiper.min.js")
   script(src="../../js/detail.js")

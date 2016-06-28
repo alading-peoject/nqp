@@ -191,6 +191,7 @@ body {
   height: 5rem;
   line-height: 5rem;
   text-align: center;
+  color: #fff;
   position: absolute;
   left: 0;
   top: 0;
@@ -213,10 +214,8 @@ body {
 }
 .coupon .header h1 {
   font-size: 1.5rem;
-  color: #fff;
 }
 .coupon .header .back {
-  color: #fff;
   font-size: 2rem;
 }
 .coupon .table thead tr,
@@ -227,7 +226,7 @@ body {
   width: 100%;
 }
 .coupon .table tr {
-  border-bottom: 1px solid #b4b4b4;
+  border-bottom: 0.05rem  solid #b4b4b4;
   font-size: 1.1rem;
   color: #000;
 }
@@ -255,6 +254,9 @@ body {
 .coupon .table tbody td:nth-child(5) {
   color: #fff;
 }
+.coupon .table tbody td.negative {
+  color: #f33718;
+}
 .coupon .btn {
   padding: 0.25rem 1rem;
   color: #fff;
@@ -268,10 +270,8 @@ body {
 }
 .subscribe .header h1 {
   font-size: 1.5rem;
-  color: #fff;
 }
 .subscribe .header .back {
-  color: #fff;
   font-size: 2rem;
 }
 .subscribe .notice {
@@ -304,7 +304,7 @@ body {
   width: 100%;
 }
 .subscribe .table tr {
-  border-bottom: 1px solid #b4b4b4;
+  border-bottom: 0.05rem  solid #b4b4b4;
   font-size: 1.1rem;
   color: #000;
 }
@@ -329,6 +329,9 @@ body {
 .subscribe .table tbody td.positive {
   color: #f9c00e;
 }
+.subscribe .table tbody td.negative {
+  color: #f33718;
+}
 .subscribe .btn {
   padding: 0.25rem 1rem;
   color: #fff;
@@ -342,10 +345,8 @@ body {
 }
 .present .header h1 {
   font-size: 1.5rem;
-  color: #fff;
 }
 .present .header .back {
-  color: #fff;
   font-size: 2rem;
 }
 .present .notice {
@@ -381,7 +382,7 @@ body {
   width: 100%;
 }
 .present .table tr {
-  border-bottom: 1px solid #b4b4b4;
+  border-bottom: 0.05rem  solid #b4b4b4;
   font-size: 1.1rem;
   color: #000;
 }
@@ -405,6 +406,9 @@ body {
 }
 .present .table tbody td.positive {
   color: #f9c00e;
+}
+.present .table tbody td.negative {
+  color: #f33718;
 }
 .present .btn {
   padding: 0.25rem 1rem;

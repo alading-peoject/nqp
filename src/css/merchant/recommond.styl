@@ -1,0 +1,56 @@
+@import "../common/util"
+
+recommond()
+	.control_select {
+		width: 200px;
+	}
+	.header h1
+		font-size $rem(30px)
+	$setSelect()
+
+	.nav
+		display flex
+		background-color #f5f4f9
+		height $rem(70px)
+		justify-content center
+		align-items center
+		border-bottom $rem(1px) solid #aeaeae
+		li
+			flex 1
+			text-align center
+			border-right $rem(1px) solid #aeaeae
+			&:last
+				border-right none
+	.banner img
+		width 100%
+	.detail .item
+		display flex
+		padding $rem(20px 34px)
+		border-bottom $rem(1px) solid #b4b4b4
+		.img
+			flex 1
+			img
+				width $rem(228px)
+				height $rem(122px)
+				max-width 100%
+		.main
+			flex 2
+			margin-left $rem(20px)
+			h2
+				font-size $rem(24px)
+				margin-bottom $rem(10px)
+			.intro
+				font-size $rem(18px)
+				color #999999
+				margin-bottom $rem(10px)
+			.extral
+				display flex
+				justify-content space-between
+				.star
+					background url("../../images/nqp_003.png") no-repeat
+					width $rem(140px)
+					background-size contain
+				em
+					text-align left
+				strong
+					text-align right

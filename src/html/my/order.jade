@@ -1,60 +1,56 @@
 extends ./common/layout
 block content
-  - var title = '推荐商家';
-  div(class="list container")
+  - var title = '我的订单';
+  div(class="order container")
     include ./common/header
     div(class="content")
-      div(class="navigator")
-        a(class="sub" href="#") 智能排序
-        a(class="sub" href="#") 我附件
-        a(class="sub" href="#")
-          select 省份
-            option 浙江省
-            option 北京市
-        a(class="sub" href="#") 
-          select 城市
-            option 杭州
-            option 金华
-      div(class="detail")
-        ul(class="menu")
-          li(class="sub selected")
-            a(href="#") 餐饮
-          li(class="sub")
-            a(href="#") 景点
-          li(class="sub")
-            a(href="#") 酒店
-          li(class="sub")
-            a(href="#") 休闲
-          li(class="sub")
-            a(href="#") 娱乐
-          li(class="sub")
-            a(href="#") KTV
-        div(class="main")
-          div(class="no-list")
-            | 暂无商户信息
-          div(class="item")
-            div(class="pic") 
-              img(src="../../images/1_03.jpg")
-            div(class="note")
-              p(class="name") 美美蛋糕店
-              p(class="level level1")
-              p(class="service") 送礼、预定等服务
-              p(class="extral")
-                span
-                  em ¥200
-                  | 起 
-                strong <100m
-          div(class="item")
-            div(class="pic") 
-              img(src="../../images/1_03.jpg")
-            div(class="note")
-              p(class="name") 美美蛋糕店
-              p(class="level level1")
-              p(class="service") 送礼、预定等服务
-              p(class="extral")
-                span
-                  em ¥200
-                  | 起 
-                strong <100m
-    include ./common/footer
-    script(src="../../js/list.js")
+      ul(class="nav")
+        li(class="active") 全部
+        li 待付款
+        li 待发货
+        li 待收货
+      div(class="item")
+        div(class="item-header")
+          span(class="left") 觅千品商城
+          span(class="right positive") 商家已发货
+        div(class="item-body")
+          div(class="img")
+            img(width="160" height="160" src="../../images/3_03.jpg")
+          div(class="main")
+            div(class="on")
+              div(class="left")
+                h2 全家福澳式肉粒
+                p 口味：五香味
+                p 数量：x1
+              div(class="right")
+                h2 ¥31.8
+                p(class="origin-price") ¥36.00
+                p(class="positive") 抵用元宝：12
+            div(class="down")
+              | 合计：¥27.8(含运费¥8.00)
+        div(class="item-footer")
+           a(class="btn btn-cancel") 退款
+           a(class="btn btn-confirm") 查看物流
+           a(class="btn btn-confirm") 确认收货
+      div(class="item")
+        div(class="item-header")
+          span(class="left") 觅千品商城
+          span(class="right positive") 商家已发货
+        div(class="item-body")
+          div(class="img")
+            img(width="160" height="160" src="../../images/3_03.jpg")
+          div(class="main")
+            div(class="on")
+              div(class="left")
+                h2 全家福澳式肉粒
+                p 口味：五香味
+                p 数量：x1
+              div(class="right")
+                h2 ¥31.8
+                p(class="origin-price") ¥36.00
+                p(class="positive") 抵用元宝：12
+            div(class="down")
+              | 合计：¥27.8(含运费¥8.00)
+        div(class="item-footer")
+           a(class="btn btn-success") 取消订单
+           a(class="btn btn-confirm") 付款
