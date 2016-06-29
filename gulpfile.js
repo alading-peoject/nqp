@@ -20,13 +20,24 @@ gulp.task('clean',function(cb){
 
 var YOUR_LOCALS = {};
 
-gulp.task('jadeCompile',['stylCompile','copyImage','copylib','copyJS'],function(){
+gulp.task('jadeCompile',['stylCompile','copyImage','copylib','copyJS','copyFont'],function(){
  	gulp.src('./src/**/*.jade')
     .pipe(jade({
       locals: YOUR_LOCALS,
       pretty: true
     }))
     .pipe(gulp.dest(paths.build))
+});
+
+gulp.task('iconfontStyle',function() {
+  gulp.src(['./src/iconfont/*.styl'])
+    .pipe(stylus())
+    .pipe(gulp.dest(paths.build+"/iconfont/"))
+});
+
+gulp.task('copyFont',['iconfontStyle'],function() {
+  gulp.src(['./src/iconfont/*.*'])
+    .pipe(gulp.dest(paths.build+'/iconfont'))
 });
 
 gulp.task('copyImage', function() {

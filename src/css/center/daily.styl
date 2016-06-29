@@ -1,0 +1,96 @@
+daily()
+	.header
+		width 100%
+		background-color #F46C5C
+		display block
+		padding $rem(20px 20px 10px 20px)
+		color #fff
+		.title,.time
+			text-align center
+			font-size $rem(24px)
+			margin-bottom $rem(10px)
+		h1
+			text-align center
+			font-size $rem(80px)
+		.amount
+			text-align center
+			font-size $rem(24px)
+			padding $rem(20px 0 40px 0)
+		ul
+			$setFlex()
+			height $rem(120px)
+			margin-bottom $rem(30px)
+		.notice
+			padding $rem(0 20px)
+			text-align center
+		ul li
+			font-size $rem(32px)
+			border-right $rem(1px) solid #fff
+			flex 1
+			$setFlex(center)
+			flex-direction column
+			&:last
+				border-right none
+			em,strong
+				display block
+			em
+				color #fff
+				font-weight normal
+				font-size $rem(50px)
+				margin-right $rem(10px)
+			strong 
+				color rgba(255,255,255,0.5)
+				font-weight normal
+	.up-arrow:before
+		content "↑"
+		font-weight bold
+		font-size $rem(30px)
+		margin-right $rem(10px)
+	.down-arrow:before
+		content "↓"
+		font-weight bold
+		font-size $rem(30px)
+		margin-right $rem(5px)
+			
+	.content
+		overflow-x hidden
+		overflow-y auto
+		flex 2
+	.detail
+		width 100%
+		flex 2
+		color #999
+		background-color #fff
+		font-size $rem(32px)
+	.detail .item h2
+		padding $rem(40px 30px)
+		color #000
+		text-align center
+		font-size $rem(50px)
+	.detail .item 
+		$setFlex()
+		flex-direction column
+		color #000
+		margin-bottom $rem(70px)
+		.picture
+			text-align center
+			img 
+				width $rem(280px)
+				height $rem(280px)
+		.notice
+			margin-top $rem(30px)
+			$setFlex()
+			li 
+				margin-right $rem(20px)
+	.detail .item.store 
+		padding $rem(0 50px)
+		.notice
+			justify-content space-between
+			width 100%
+			.orange
+				color #F46C5C	
+				&:before
+					color #F46C5C	
+			
+
+		

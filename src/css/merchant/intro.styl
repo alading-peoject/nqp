@@ -1,6 +1,8 @@
 @import "../common/util"
 
 intro()
+	.swiper-slide img
+		width 100%
 	.swiper-container
 	  width 100%
 	  height 100%
@@ -20,8 +22,10 @@ intro()
 	  -ms-flex-align center
 	  -webkit-align-items center
 	  align-items center
-	.swiper-slide img
-		width 100%
+	.header h1
+		font-size $rem(30px)
+	.back
+			font-size $rem(40px)
 	.content
 		background-color #F6F6F6
 		color #000
@@ -30,10 +34,27 @@ intro()
 	.general .menu,.coupon .item,.notice h3
 		border-bottom $rem(1px) solid #B3B3B3
 	.general .menu,.coupon .item,.extral,.notice h3
-		$setFlex()
+		$setFlex(flex-start)
 		height $rem(56px)
-		padding $rem(0 34px)
-		justify-content flex-start
+		padding $rem(0 20px)
+	.general .menu p,.general .menu strong,.extral span
+		$setFlex(flex-start)
+	.extral .arrow-right 
+		margin-left $rem(10px)
+	.arrow-right 
+		width $rem(14px)
+		height $rem(22px)
+	.icon-phone img,.icon-address img
+		width $rem(20px)
+		height $rem(30px)
+		margin-right $rem(5px)
+	.general .menu,.extral
+		justify-content space-between
+	.general .menu strong
+		color #4C4C4C
+	.extral .start img
+		width $rem(140px)
+		height $rem(32px)
 	.coupon
 		border-top $rem(1px) solid #d9d9d9
 	.extral,.notice h3
@@ -46,4 +67,20 @@ intro()
 		border-bottom $rem(1px) solid #B3B3B3
 	.picture img
 		width 100%
-		
+	.footer
+		height $rem(88px)
+		background-color #000
+		.active
+			border-bottom $rem(4px) solid #e38f03
+		.navigator
+			width 100%
+			display flex
+			border-bottom $rem(1px) solid #fff
+		.navigator li
+			flex 1
+			text-align center
+			color #fff
+			font-size $rem(20px)
+			padding $rem(15px 0px)
+			$setFlex()
+			flex-direction column
