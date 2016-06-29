@@ -1,1 +1,37 @@
 extends ./common/layout
+block title 
+	title 门店日报
+block content
+	div(class="business container")
+			section(class="header")
+				p(class="title") 品冠假日酒店
+				p(class="time") 2016-06-23
+				h1 日报
+				p(class="amount") 经营数据一目了然
+				ul
+					li 
+						em +2
+						strong 好评
+					li
+						em 109%
+						strong 代金券收入
+					li
+						em 250%
+						strong 人气
+				p(clas="notice")
+					| 数据为昨日单日数据，增长下降趋势对比为上周同日
+			section(class="detail content")
+				div(class="item")
+					h2 顾客口碑
+					div(class="picture")
+					ul(class="notice")
+						li 
+							em 点赞数 
+							strong 1
+						li 
+							em 好评数 
+							strong 1
+						li 
+							em 差评数 
+							strong 1
+
