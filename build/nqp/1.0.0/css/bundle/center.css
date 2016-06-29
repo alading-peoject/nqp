@@ -1,0 +1,257 @@
+html {
+  color: #666;
+  background: #fff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 1.2rem/1.5 "Hiragino Sans GB", "Microsoft Yahei", sans-serif, monospace;
+}
+input,
+select,
+textarea,
+button {
+  font-size: 100%;
+  outline: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  text-align: inherit;
+}
+fieldset,
+img {
+  border: 0;
+}
+img {
+  vertical-align: top;
+}
+iframe {
+  display: block;
+}
+abbr,
+acronym {
+  border: 0font -variant normal;
+}
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0 position relative vertical-align baseline;
+}
+sup top,
+sub bottom,
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+ins,
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  color: #00f;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-size: 0.7rem;
+}
+.business {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+  height: 100%;
+  font-size: 1.6rem;
+}
+.business .header {
+  width: 100%;
+  background-color: #ff6634;
+  height: 15.5rem;
+  display: block;
+  padding: 2.5rem 1rem;
+  color: #fff;
+}
+.business .header h1 {
+  text-align: center;
+  font-size: 2.1rem;
+}
+.business .header .amount {
+  text-align: center;
+  font-size: 2.75rem;
+  padding: 3rem 0rem 3rem 0rem;
+}
+.business .header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.business .header ul li {
+  font-size: 1.6rem;
+  border-right: 0.05rem  solid #fff;
+  flex: 1;
+  text-align: center;
+}
+.business .header ul li:last {
+  border-right: none;
+}
+.business .header ul li em {
+  color: rgba(255,255,255,0.5);
+  font-weight: normal;
+  margin-right: 0.5rem;
+}
+.business .header ul li strong {
+  color: #fff;
+  font-weight: normal;
+}
+.business .detail {
+  width: 100%;
+  flex: 2;
+  color: #999;
+  background-color: #f0f0f0;
+  font-size: 1.6rem;
+}
+.business .detail h2 {
+  height: 3.8rem;
+  line-height: 3.8rem;
+  padding: 0rem 1.5rem;
+}
+.business .detail .item {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-top: 0.1rem  solid #e3e3e3;
+  border-bottom: 0.1rem  solid #e3e3e3;
+}
+.business .detail .item .item-body {
+  margin: 0rem 1.5rem;
+  padding: 1rem 0rem;
+  border-bottom: 0.05rem  solid #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  line-height: 3rem;
+}
+.business .detail .item .item-body .left {
+  flex: 2;
+}
+.business .detail .item .item-body .right {
+  flex: 1;
+}
+.business .detail .item .left .title {
+  color: #999;
+}
+.business .detail .item .left .data {
+  color: #000;
+}
+.business .detail .item .right .increase {
+  color: #f85c50;
+  white-space: nowrap;
+}
+.business .detail .item .item-footer {
+  height: 3.8rem;
+  line-height: 3.8rem;
+  padding: 0rem 1.5rem;
+}

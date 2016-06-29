@@ -492,184 +492,69 @@ body {
   font-size: 1.65rem;
   font-weight: normal;
 }
-.intro .swiper-container .general,
-.intro width 100% .general,
-.intro height 100% .general,
-.intro .swiper-slide .general,
-.intro text-align center .general,
-.intro font-size 18px .general,
-.intro background #fff .general,
-.intro display -webkit-box .general,
-.intro display -ms-flexbox .general,
-.intro display -webkit-flex .general,
-.intro display flex .general,
-.intro -webkit-box-pack center .general,
-.intro -ms-flex-pack center .general,
-.intro -webkit-justify-content center .general,
-.intro justify-content center .general,
-.intro -webkit-box-align center .general,
-.intro -ms-flex-align center .general,
-.intro -webkit-align-items center .general,
-.intro align-items center .general,
-.intro .swiper-container .recommen,
-.intro width 100% .recommen,
-.intro height 100% .recommen,
-.intro .swiper-slide .recommen,
-.intro text-align center .recommen,
-.intro font-size 18px .recommen,
-.intro background #fff .recommen,
-.intro display -webkit-box .recommen,
-.intro display -ms-flexbox .recommen,
-.intro display -webkit-flex .recommen,
-.intro display flex .recommen,
-.intro -webkit-box-pack center .recommen,
-.intro -ms-flex-pack center .recommen,
-.intro -webkit-justify-content center .recommen,
-.intro justify-content center .recommen,
-.intro -webkit-box-align center .recommen,
-.intro -ms-flex-align center .recommen,
-.intro -webkit-align-items center .recommen,
-.intro align-items center .recommen,
-.intro .swiper-container .coupon,
-.intro width 100% .coupon,
-.intro height 100% .coupon,
-.intro .swiper-slide .coupon,
-.intro text-align center .coupon,
-.intro font-size 18px .coupon,
-.intro background #fff .coupon,
-.intro display -webkit-box .coupon,
-.intro display -ms-flexbox .coupon,
-.intro display -webkit-flex .coupon,
-.intro display flex .coupon,
-.intro -webkit-box-pack center .coupon,
-.intro -ms-flex-pack center .coupon,
-.intro -webkit-justify-content center .coupon,
-.intro justify-content center .coupon,
-.intro -webkit-box-align center .coupon,
-.intro -ms-flex-align center .coupon,
-.intro -webkit-align-items center .coupon,
-.intro align-items center .coupon,
-.intro .swiper-container .codation,
-.intro width 100% .codation,
-.intro height 100% .codation,
-.intro .swiper-slide .codation,
-.intro text-align center .codation,
-.intro font-size 18px .codation,
-.intro background #fff .codation,
-.intro display -webkit-box .codation,
-.intro display -ms-flexbox .codation,
-.intro display -webkit-flex .codation,
-.intro display flex .codation,
-.intro -webkit-box-pack center .codation,
-.intro -ms-flex-pack center .codation,
-.intro -webkit-justify-content center .codation,
-.intro justify-content center .codation,
-.intro -webkit-box-align center .codation,
-.intro -ms-flex-align center .codation,
-.intro -webkit-align-items center .codation,
-.intro align-items center .codation {
-  padding: 0.5rem 2rem;
-  margin-bottom: 0.5rem;
-}
-.intro .slide {
-  text-align: center;
-}
-.intro .slide img {
+.intro .swiper-container,
+.intro width 100%,
+.intro height 100%,
+.intro .swiper-slide,
+.intro text-align center,
+.intro font-size 18px,
+.intro background #fff,
+.intro display -webkit-box,
+.intro display -ms-flexbox,
+.intro display -webkit-flex,
+.intro display flex,
+.intro -webkit-box-pack center,
+.intro -ms-flex-pack center,
+.intro -webkit-justify-content center,
+.intro justify-content center,
+.intro -webkit-box-align center,
+.intro -ms-flex-align center,
+.intro -webkit-align-items center,
+.intro align-items center,
+.intro .swiper-slide img {
   width: 100%;
 }
-.intro .general {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+.intro .content {
+  background-color: #f6f6f6;
+  color: #000;
 }
-.intro .general .menu {
-  width: 18%;
-  margin-right: 4%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.intro .general .main {
-  flex: 2;
-}
-.intro .general .menu img {
-  max-width: 100%;
-}
-.intro .general .title {
-  text-align: left;
-  font-size: 2.4rem;
-  color: #010101;
+.intro .general,
+.intro .coupon,
+.intro .extral,
+.intro .notice {
   margin-bottom: 1rem;
 }
-.intro .general .cont .item {
-  margin-bottom: 0.8rem;
-  font-size: 1.65rem;
-  height: 2rem;
-  line-height: 2rem;
+.intro .general .menu,
+.intro .coupon .item,
+.intro .notice h3 {
+  border-bottom: 0.05rem  solid #b3b3b3;
 }
-.intro .general .cont .item strong {
-  font-weight: normal;
-}
-.intro .general .cont .item img {
-  max-width: 2rem;
-  margin-right: 0.5rem;
+.intro .general .menu,
+.intro .coupon .item,
+.intro .extral,
+.intro .notice h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 2.8rem;
+  padding: 0rem 1.7rem;
+  justify-content: flex-start;
 }
 .intro .coupon {
   border-top: 0.05rem  solid #d9d9d9;
-  padding: 1rem 0rem;
 }
-.intro .coupon span {
-  width: 76%;
-  margin-left: 24%;
-  display: block;
-  font-size: 1.65rem;
-  font-weight: normal;
-  line-height: 4rem;
-}
-.intro .coupon span em {
-  width: 2rem;
-  height: 2rem;
-  display: inline-block;
-  border-radius: 0.25rem;
-  text-align: center;
-  line-height: 2rem;
-  margin-right: 1rem;
-}
-.intro .coupon span .del {
-  background-color: #ff635b;
-  color: #fff;
-  border-color: transparent;
-}
-.intro .coupon span .first {
-  background-color: #ffa627;
-  color: #fff;
-  border-color: transparent;
-}
-.intro .coupon span .free {
-  background-color: #3cb393;
-  color: #fff;
-  border-color: transparent;
-}
+.intro .extral,
 .intro .notice h3 {
-  height: 5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  background-color: #efefef;
-  color: #000;
-  border-color: transparent;
-  font-size: 2rem;
-  font-weight: normal;
-  text-indent: 1rem;
+  border-top: 0.05rem  solid #b3b3b3;
+  border-bottom: 0.05rem  solid #b3b3b3;
 }
-.intro .notice .cont {
-  padding: 1rem;
+.intro .codation {
+  padding: 0.5rem 1.7rem;
+  text-indent: 2.5rem;
+  line-height: 2rem;
+  border-bottom: 0.05rem  solid #b3b3b3;
 }
-.intro .notice .codation {
-  font-size: 1.65rem;
-  font-weight: normal;
-  line-height: 1.4rem;
+.intro .picture img {
+  width: 100%;
 }

@@ -1,0 +1,71 @@
+@import "../common/util"
+
+business()
+	.header
+		width 100%
+		background-color #FF6634
+		height $rem(310px)
+		display block
+		padding $rem(50px 20px)
+		color #fff
+		h1
+			text-align center
+			font-size $rem(42px)
+		.amount
+			text-align center
+			font-size $rem(55px)
+			padding $rem(60px 0 60px 0)
+		ul
+			$setFlex()
+		ul li
+			font-size $rem(32px)
+			border-right $rem(1px) solid #fff
+			flex 1
+			text-align center
+			&:last
+				border-right none
+			em
+				color rgba(255,255,255,0.5)
+				font-weight normal
+				margin-right $rem(10px)
+			strong 
+				color #fff
+				font-weight normal
+	.detail
+		width 100%
+		flex 2
+		color #999
+		background-color #f0f0f0
+		font-size $rem(32px)
+	.detail h2
+		height $rem(76px)
+		line-height @height
+		padding $rem(0px 30px)
+	.detail .item
+		background-color #fff
+		margin-bottom $rem(20px)
+		border-top $rem(2px) solid #E3E3E3
+		border-bottom $rem(2px) solid #E3E3E3
+		.item-body
+			margin $rem(0px 30px)
+			padding $rem(20px 0px)
+			border-bottom $rem(1px) solid #E3E3E3
+			$setFlex()
+			line-height $rem(60px)
+			.left
+				flex 2
+			.right
+				flex 1
+		.left .title
+			color #999999
+		.left .data
+			color #000000
+		.right .increase
+			color #F85C50
+			white-space nowrap
+		.item-footer
+			height $rem(76px)
+			line-height @height
+			padding $rem(0px 30px)
+		
+	
