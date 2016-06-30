@@ -637,6 +637,7 @@ body {
   width: 100%;
   display: flex;
   border-bottom: 0.05rem  solid #fff;
+  background-color: #000;
 }
 .intro .footer .navigator li {
   flex: 1;
@@ -649,4 +650,27 @@ body {
   align-items: center;
   flex-direction: row;
   flex-direction: column;
+}
+.intro .footer .navigator li em {
+  background-repeat: no-repeat;
+  background-positioin: center center;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-size: 1.6rem  1.6rem;
+}
+.intro .footer .navigator li strong {
+  font-weight: normal;
+}
+.intro .footer .navigator li:nth-child(1) em {
+  background-image: url("../../images/nqpb_01.png");
+}
+.intro .footer .navigator li:nth-child(2) em {
+  background-image: url("../../images/nqpb_02.png");
+}
+.intro .footer .navigator li:nth-child(3) em {
+  background-image: url("../../images/nqpb_03.png");
+}
+.intro .footer .navigator li:nth-child(4) em {
+  background-image: url("../../images/nqpb_04.png");
 }
