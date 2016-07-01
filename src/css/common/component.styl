@@ -44,27 +44,62 @@ general(headerHeight=136px,footerHeight=138px,headerBackgroundColor=#ffc000,head
 		background-color footerBackgroundColor
 		color footerColor
 $setSelect()
-	select {
-	    font-weight: bold;
-	    color: #000;
-	    width: 64%;
-	    -webkit-appearance: none;
-	    border none
-	}
-	label {
-		position: relative;
-	}
-	
-	label:after {
-		position:absolute;
-		top: $rem(-4px);
-		right: $rem(0px);
+	.select-wrap
+		width 60%
+		height 100%
+		position:relative; 
 		display: inline-block;
-		content: "▼";
-		color: #000;
-		font-size: $rem(12px);
-		text-align: center
-		width: $rem(24px)
-		height: $rem(24px)
-		pointer-events: none;
-	}
+		background-color: #fff;
+		select
+			width                    : 100%;
+			height                   : 100%;
+			line-height              : 100%;
+			padding-right            : $rem(20px);
+			text-indent              : $rem(4px);
+			text-align               : left;
+			vertical-align           : middle;
+			border                   : $rem(1px) solid #fff;
+			-moz-border-radius       : $rem(6px);
+			-webkit-border-radius    : $rem(6px);
+			border-radius            : $rem(6px);
+			-webkit-appearance       : none;
+			-moz-appearance          : none;
+			appearance               : none;
+			font-family              : Arial,  Calibri, Tahoma, Verdana;
+			font-size                : $rem(18px);
+			font-weight              : 500;
+			color                    : #000;
+			background-color: #fff;
+			cursor                   : pointer;
+			outline                  : none;
+			option
+			  padding             : $rem(4px 10px 4px 10px);
+			  font-size           : $rem(11px);
+			  font-weight         : normal;
+			option[selected]
+				font-weight:bold
+			option:nth-child(even)
+				background-color:#fff;
+			&:hover
+				font-weight: 700;
+			&:focus
+				box-shadow: inset 0 0 $rem(5px) #fff; font-weight: 600;
+
+		&::after
+			content                 : "\25bc";
+			position                : absolute;
+			top                     : 0;
+			right                   : 0;
+			bottom                  : 0;
+			width                   : $rem(20px);
+			height 									: $rem(70px);
+			line-height             : @height;
+			vertical-align          : middle;
+			text-align              : center;
+			background              : #fff;
+			color                   : #000;
+			-moz-border-radius       : 0 6px 6px 0;
+			-webkit-border-radius    : 0 6px 6px 0;
+			border-radius           : 0 6px 6px 0;
+			pointer-events          : none;
+		

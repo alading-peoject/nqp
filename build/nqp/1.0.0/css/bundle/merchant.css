@@ -249,27 +249,69 @@ body {
 .recommond .header h1 {
   font-size: 1.5rem;
 }
-.recommond select {
-  font-weight: bold;
-  color: #000;
-  width: 64%;
-  -webkit-appearance: none;
-  border: none;
-}
-.recommond label {
+.recommond .select-wrap {
+  width: 60%;
+  height: 100%;
   position: relative;
-}
-.recommond label:after {
-  position: absolute;
-  top: -0.2rem;
-  right: 0rem;
   display: inline-block;
-  content: "▼";
+  background-color: #fff;
+}
+.recommond .select-wrap select {
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  padding-right: 1rem;
+  text-indent: 0.2rem;
+  text-align: left;
+  vertical-align: middle;
+  border: 0.05rem  solid #fff;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: Arial, Calibri, Tahoma, Verdana;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #000;
-  font-size: 0.6rem;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+option
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.55rem;
+  font-weight: normal;
+}
+.recommond .select-wrap select option[selected] {
+  font-weight: bold;
+}
+.recommond .select-wrap select option:nth-child(even) {
+  background-color: #fff;
+}
+.recommond .select-wrap select:hover {
+  font-weight: 700;
+}
+.recommond .select-wrap select:focus {
+  box-shadow: inset 0 0 0.25rem  #fff;
+  font-weight: 600;
+}
+.recommond .select-wrap::after {
+  content: "\25bc";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  vertical-align: middle;
   text-align: center;
-  width: 1.2rem;
-  height: 1.2rem;
+  background: #fff;
+  color: #000;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
   pointer-events: none;
 }
 .recommond .nav {
@@ -284,6 +326,8 @@ body {
   flex: 1;
   text-align: center;
   border-right: 0.05rem  solid #aeaeae;
+  height: 100%;
+  background-color: #fff;
 }
 .recommond .nav li:last {
   border-right: none;
@@ -332,27 +376,69 @@ body {
 .recommond .detail .item .main .extral strong {
   text-align: right;
 }
-.recommond select {
-  font-weight: bold;
-  color: #000;
-  width: 64%;
-  -webkit-appearance: none;
-  border: none;
-}
-.recommond label {
+.recommond .select-wrap {
+  width: 60%;
+  height: 100%;
   position: relative;
-}
-.recommond label:after {
-  position: absolute;
-  top: -0.2rem;
-  right: 0rem;
   display: inline-block;
-  content: "▼";
+  background-color: #fff;
+}
+.recommond .select-wrap select {
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  padding-right: 1rem;
+  text-indent: 0.2rem;
+  text-align: left;
+  vertical-align: middle;
+  border: 0.05rem  solid #fff;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: Arial, Calibri, Tahoma, Verdana;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #000;
-  font-size: 0.6rem;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+option
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.55rem;
+  font-weight: normal;
+}
+.recommond .select-wrap select option[selected] {
+  font-weight: bold;
+}
+.recommond .select-wrap select option:nth-child(even) {
+  background-color: #fff;
+}
+.recommond .select-wrap select:hover {
+  font-weight: 700;
+}
+.recommond .select-wrap select:focus {
+  box-shadow: inset 0 0 0.25rem  #fff;
+  font-weight: 600;
+}
+.recommond .select-wrap::after {
+  content: "\25bc";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  vertical-align: middle;
   text-align: center;
-  width: 1.2rem;
-  height: 1.2rem;
+  background: #fff;
+  color: #000;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
   pointer-events: none;
 }
 .voucher .content {
@@ -633,13 +719,13 @@ body {
 .intro .footer .active {
   border-bottom: 0.2rem  solid #e38f03;
 }
-.intro .footer .navigator {
+.footer .navigator {
   width: 100%;
   display: flex;
   border-bottom: 0.05rem  solid #fff;
   background-color: #000;
 }
-.intro .footer .navigator li {
+.footer .navigator .item {
   flex: 1;
   text-align: center;
   color: #fff;
@@ -650,8 +736,12 @@ body {
   align-items: center;
   flex-direction: row;
   flex-direction: column;
+  opacity: 0.5;
 }
-.intro .footer .navigator li em {
+.footer .navigator .item.active {
+  opacity: 1;
+}
+.footer .navigator .item em {
   background-repeat: no-repeat;
   background-positioin: center center;
   display: block;
@@ -659,18 +749,18 @@ body {
   height: 1.6rem;
   background-size: 1.6rem  1.6rem;
 }
-.intro .footer .navigator li strong {
+.footer .navigator .item strong {
   font-weight: normal;
 }
-.intro .footer .navigator li:nth-child(1) em {
+.footer .navigator .item:nth-child(1) em {
   background-image: url("../../images/nqpb_01.png");
 }
-.intro .footer .navigator li:nth-child(2) em {
+.footer .navigator .item:nth-child(2) em {
   background-image: url("../../images/nqpb_02.png");
 }
-.intro .footer .navigator li:nth-child(3) em {
+.footer .navigator .item:nth-child(3) em {
   background-image: url("../../images/nqpb_03.png");
 }
-.intro .footer .navigator li:nth-child(4) em {
+.footer .navigator .item:nth-child(4) em {
   background-image: url("../../images/nqpb_04.png");
 }

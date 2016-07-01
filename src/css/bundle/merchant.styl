@@ -7,7 +7,6 @@
 @import "../merchant/intro.styl"
 
 general(100px,,,#000)
-
 .recommond
 	recommond()
 	$setSelect()
@@ -15,3 +14,37 @@ general(100px,,,#000)
 	voucher()
 .intro
 	intro()
+.footer
+	.navigator
+		width 100%
+		display flex
+		border-bottom $rem(1px) solid #fff
+		background-color #000
+	.navigator .item
+		flex 1
+		text-align center
+		color #fff
+		font-size $rem(20px)
+		padding $rem(15px 0px)
+		$setFlex()
+		flex-direction column
+		opacity 0.5
+	.navigator .item.active
+		opacity 1.0
+	.navigator .item em
+		background-repeat no-repeat
+		background-positioin center center
+		display block
+		width $rem(32px)
+		height $rem(32px)
+		background-size $rem(32px) $rem(32px)
+	.navigator .item strong
+		font-weight normal
+	.navigator .item:nth-child(1) em
+		background-image url("../../images/nqpb_01.png")
+	.navigator .item:nth-child(2) em
+		background-image url("../../images/nqpb_02.png")
+	.navigator .item:nth-child(3) em
+		background-image url("../../images/nqpb_03.png")
+	.navigator .item:nth-child(4) em
+		background-image url("../../images/nqpb_04.png")
