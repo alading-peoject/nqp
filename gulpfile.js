@@ -48,10 +48,12 @@ gulp.task('copyImage', function() {
   gulp.src(['./src/**/*.jpg','./src/**/*.png'])
     .pipe(gulp.dest(paths.build))
 });
+
 gulp.task('copyJS', function() {
   gulp.src(['./src/js/**/*.js'])
     .pipe(gulp.dest(paths.build+'/js'))
 });
+
 gulp.task('copylib', function() {
   gulp.src(['./lib/**/*.*'])
     .pipe(gulp.dest(paths.build+"/lib"))
@@ -64,7 +66,7 @@ gulp.task('stylCompile', function() {
     // }))
     .pipe(stylus())
     // .pipe(sourcemaps.init())
-    .pipe(postcss([ autoprefixer({ browsers: ['last 4 versions'] }) ,cssnano()]))
+    .pipe(postcss([ autoprefixer({ browsers: ['not ie <= 8','Firefox >= 20','last 2 Chrome versions','iOS 7'] })]))
     // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.build+"/css/bundle/"))
 });
