@@ -66,7 +66,7 @@ gulp.task('stylCompile', function() {
     // }))
     .pipe(stylus())
     // .pipe(sourcemaps.init())
-    .pipe(postcss([ autoprefixer({ browsers: ['not ie <= 8','Firefox >= 20','last 2 Chrome versions','iOS 7'] })]))
+    .pipe(postcss([ autoprefixer({ browsers: ['last 5 versions'] })]))
     // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.build+"/css/bundle/"))
 });
