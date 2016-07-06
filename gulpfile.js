@@ -9,6 +9,10 @@ var uglify = require('gulp-uglify');
 var del = require('del');
 var connect = require('gulp-connect');
 var jade = require('gulp-jade');
+var postcss      = require('gulp-postcss');
+var sourcemaps   = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 
 var paths = {
   build: './build/' + jsonObj.name + '/' + jsonObj.version
@@ -59,6 +63,9 @@ gulp.task('stylCompile', function() {
     //     compress:true
     // }))
     .pipe(stylus())
+    // .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer({ browsers: ['last 4 versions'] }) ,cssnano()]))
+    // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.build+"/css/bundle/"))
 });
 
