@@ -23,3 +23,6 @@
 要启动该项目，需在命令行下按顺序执行如下命令，然后按照命令行提示操作。具体命令如下：  
   1.npm install    
   2.gulp
+
+# css3 美化input number 
+http://stackoverflow.com/questions/4671992/chrome-input-type-number-css-styling
