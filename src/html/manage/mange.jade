@@ -1,0 +1,47 @@
+extends ./common/layout
+block title
+block content
+	div(class="container")
+		div(class="panel panel-default")
+			div(class="panel-heading") 使用期限标签发行管理
+			div(class="panel-body")
+				div(class="row")
+					div(class="col-sm-4 form-inline")
+						div(style="margin-bottom:15px") 日期：2016年6月30日 23:15
+						div(class="form-group")
+							label(for="number") 数量
+							input(type="number" id="number" class="form-control" value="1") 
+					div(class="col-sm-8")
+						ul(class="nav nav-pills")
+							li(role="presentation" class="active")
+								a(href="#") 入库日
+							li(role="presentation" )
+								a(href="#") 备品
+							li(role="presentation" )
+								a(href="#") 解冻开封
+							li(role="presentation")
+								a(href="#") 卷寿司
+							li(role="presentation")
+								a(href="#") 热加工类
+							li(role="presentation")
+								a(href="#") 外带
+							li(role="presentation")
+								a(href="#") 切鱼
+							li(role="presentation")
+								a(href="#") 外场
+
+				div(class="row" style="padding:10px 10px")
+					table.table.table-bordered
+						thead
+							tr
+								th 解冻后24小时使用时限
+								th 解冻后48小时使用时限
+								th 开封后48小时使用时限
+								th 开封后1周使用时限
+						tbody
+							tr
+								th 1
+								td Table cell
+								td Table cell
+								td Table cell
+								
