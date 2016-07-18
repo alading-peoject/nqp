@@ -10,7 +10,12 @@ block content
 						div(class="date" style="margin-bottom:10px") 日期：2016年6月30日 23:15
 						div(class="form-group")
 							label(for="number") 数量
-							input(type="number" id="number" class="form-control" value="1") 
+							//- input(type="number" id="number" class="form-control" value="1") 
+							div(id="number-value" class="number-value")
+								p(class="box") 1
+								p(class="arrow-box")
+									span(class="up-arrow") ▲
+									span(class="down-arrow") ▼
 					div(class="col-sm-8")
 						ul(class="nav nav-pills")
 							li(role="presentation" class="selected")
@@ -44,4 +49,5 @@ block content
 								td Table cell
 								td Table cell
 								td Table cell
+	script(type="text/javascript" src="../../js/manage.js")
 								

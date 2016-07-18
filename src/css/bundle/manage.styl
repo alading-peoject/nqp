@@ -90,6 +90,46 @@
 			color #000
 	.selected
 		background-color #5a9ad7 
+.number-value,.box
+	width 100%
+	height 100%
+.box
+	text-align center
+	line-height $rem(60px)
+.number-value
+	position relative
+	left 0
+	top 0
+	.arrow-box
+		position absolute
+		right 0
+		top 0
+		width $rem(30px)
+		height 100%
+	.arrow-box .up-arrow
+		width 100%
+		padding-top $rem(8px)
+		height $rem(20px)
+		display block
+		text-align center
+		cursor pointer
+		&:active
+			opacity 0.5	
+	.arrow-box .down-arrow
+		width 100%
+		padding-bottom $rem(10px)
+		height $rem(20px)
+		text-align center
+		display block
+		cursor pointer
+		vertical-align top
+		&:active
+			opacity 0.5	
+	.arrow-box .up-arrow,.arrow-box .down-arrow
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		user-select: none;
+		
 			
 		
 		
